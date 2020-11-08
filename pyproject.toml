@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "hexlet_code"
+version = "0.1.0"
+description = "First project of Python profession"
+authors = ["Yaroslav"]
+license = "MIT"
+packages = [
+  { include = "brain_games" },
+]
+
+[tool.poetry.scripts]
+brain-games = "brain_games.scripts.brain_games:main"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+prompt = "^0.4.1"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.8.4"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
